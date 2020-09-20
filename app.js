@@ -1,3 +1,5 @@
+var openWeatherApiKey = "OPEN_WEATHER_API_KEY";
+
 $(function () {
   function showLoader() {
     var spinner = $("<span>").attr({
@@ -88,7 +90,6 @@ $(function () {
   }
 
   function fetchCityForecast(city) {
-    var openWeatherApiKey = "4c1bfef47318cc529e11b4d57eaf17db";
     var url =
       "https://api.openweathermap.org/data/2.5/forecast?appid=" +
       openWeatherApiKey;
